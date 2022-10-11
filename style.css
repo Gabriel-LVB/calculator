@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    user-select: none;
 }
 
 body {
@@ -22,16 +23,10 @@ body {
     box-shadow: 0 0.5rem 1rem black;
 }
 
-.screen {
-    background-color: #cad7dc;
-    height: 6rem;
-    border-radius: 1rem;
-    box-shadow: inset 2px 1px 0px black;
-}
-
 .buttons {
-    background-color: #8f8f8f;
+    background-color: #b3b3b3;
     height: 75%;
+    box-shadow: inset 0px 0px 5px rgb(102, 102, 102);
     border-radius: 1rem;
     margin-top: 1.5rem;
     display: flex;
@@ -50,6 +45,7 @@ button {
     cursor: pointer;
     background-color: aliceblue;
     border-width: 2.5px;
+    border-radius: 10px;
 }
 
 .zero {
@@ -71,4 +67,27 @@ button {
 .clear,
 .del {
     background-color: #ffc9c9;
+}
+
+.result,
+.topResult {
+    text-align: end;
+}
+
+.topResult {
+    height: 1rem;
+}
+
+.result {
+    font-size: 3rem;
+    float: right;
+}
+
+.screen {
+    background-color: #cad7dc;
+    height: 6rem;
+    border-radius: 1rem;
+    box-shadow: inset 0px 0px 5px rgb(43, 43, 43);
+    padding: 1rem;
+    overflow: hidden;
 }
